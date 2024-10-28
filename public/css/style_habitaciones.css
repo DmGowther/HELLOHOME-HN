@@ -1,0 +1,199 @@
+main {
+    background-color: black;
+}
+
+
+/* BANNER INICIO */
+
+.contenedor-contacto {
+    border-bottom: rgba(24, 24, 24, 0.6) 3px solid;
+    border-top: rgba(24, 24, 24, 0.6) 3px solid;
+    width: 100%;
+    background: #b22036;
+}
+
+.contenedor-banner {
+    height: 150px;
+    background: black url("../img/banner-contacto.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contenedor-banner:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.contenedor-banner-teximg {
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-banner-teximg h1 {
+    font-family: var(--fuente_2);
+    font-size: 2.5rem;
+    font-weight: max(400, 700);
+    color: white;
+    position: absolute;
+    margin: 0;
+    padding: 0 1rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+/* Inicio - mapa*/
+
+
+/*PARA EL FORMULARIO*/
+
+.contacus {
+    position: relative;
+    padding: 4px 240px;
+    width: 100%;
+    background-color: black;
+}
+
+.contacus .contactus-title {
+    font-family: var(--fuente_2);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form {
+    grid-area: form;
+}
+
+.form>h3 {
+    font-family: var(--fuente_2);
+    font-size: 1.8em;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.info {
+    grid-area: info;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+.contac {
+    padding: 40px;
+    background-color: #0A0A0A;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
+    border: #747474 1px;
+    border-style: groove;
+}
+
+.mapa {
+    padding: 0px;
+}
+
+.caja {
+    font-family: var(--fuente_2);
+    position: relative;
+    display: grid;
+    color: white;
+    grid-template-columns: 2fr 1fr;
+    grid-tempLate-rows: 5fr 4fr;
+    grid-template-areas:
+        "form info"
+        "form info"
+        "mapa mapa";
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mapa .infobox>iframe {
+    width: 100%;
+    height: 450px;
+    filter: brightness(0.6);
+    filter: invert(90%);
+}
+
+/* Final - mapa */
+
+.contenedor-banner-teximg h3 {
+    color: white;
+    position: relative;
+}
+
+.contenedor-banner-teximg img {
+    margin-top: 5%;
+    opacity: 0.6;
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+
+/* BANNER FINAL */
+
+
+.row {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-right: 30px;
+
+}
+
+.column {
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.img {
+    width: 50%;
+}
+
+
+.descripcion {
+    color: aliceblue;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+h4 {
+    color: #aa8667;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: var(--fuente_2);
+}
+
+h3 {
+    color: rgb(152, 152, 152);
+    margin-top: 20px;
+    font-family: var(--fuente_3);
+}
+
+li {
+    list-style: none;
+    color: rgb(152, 152, 152);
+    margin-top: 10px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #c29e7f;
+    color: aliceblue;
+    border-color: #c29e7f;
+    font-family: var(--fuente_2);
+}

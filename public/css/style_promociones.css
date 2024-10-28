@@ -1,0 +1,158 @@
+:root {
+    --fuente_1: 'Merriweather', serif;
+    --fuente_2: 'Open Sans', sans-serif;
+    --fuente_3: 'Fira Sans Condensed', sans-serif;
+}
+
+:root {
+    --color_1: #494E6B;
+    --color_2: #98878F;
+    --color_3: #985E6D;
+    --color_4: #192231;
+}
+
+main {
+    background-color: black;
+}
+
+/* BANNER INICIO */
+
+
+.contenedor-contacto {
+    border-bottom: rgba(24, 24, 24, 0.6) 3px solid;
+    border-top: rgba(24, 24, 24, 0.6) 3px solid;
+    width: 100%;
+    background: #b22036;
+}
+
+.contenedor-banner {
+    height: 150px;
+    background: black url("../img/banner-contacto.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contenedor-banner:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.contenedor-banner-teximg {
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-banner-teximg h1 {
+    font-family: var(--fuente_2);
+    font-size: 2.5rem;
+    font-weight: max(400, 700);
+    color: white;
+    position: absolute;
+    margin: 0;
+    padding: 0 1rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.contenedor-banner-teximg h3 {
+    color: white;
+    position: relative;
+}
+
+.contenedor-banner-teximg img {
+    margin-top: 5%;
+    opacity: 0.6;
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+
+/* BANNER FINAL */
+
+.row {
+    width: auto;
+    background-color: black;
+    margin: auto;
+}
+
+.promos {
+    display: flex;
+    position: relative;
+    height: 990px;
+    margin-left: 55px;
+    /* estor margenes se agregaron para usar el boton flotante */
+    margin-right: 55px;
+    /* estor margenes se agregaron para usar el boton flotante */
+    justify-content: center;
+}
+
+.promo {
+    color: rgb(227, 228, 228);
+    width: 50%;
+    text-align: center;
+    font-family: var(--fuente_1);
+    font-size: 20px;
+    padding-top: 20px;
+    border-style: solid;
+    border-color: #2b2427;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.imghabit1 {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+.imghabit2 {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+.nombre {
+    padding-top: 230px;
+}
+
+
+.table1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+
+.table2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.th, td {
+    padding: 8px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 12px;
+    background-color: var(--color_4);
+}
+
+.td_titu {
+    font-size: 17px;
+}

@@ -1,0 +1,295 @@
+:root {
+    --fuente_1: 'Merriweather', serif;
+    --fuente_2: 'Open Sans', sans-serif;
+    --fuente_3: 'Fira Sans Condensed', sans-serif;
+}
+
+.header-img {
+    background-color: #080808;
+    background-image: url(../img/logo.png);
+    background-size: 285px 95px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* COMIENZO DE LOS ESTILOS PARA LA BARRA DE NAVEGACION */
+
+.fijar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: #7a7a7a 0px 0px 10px;
+}
+
+.fijar * .maindiv {
+    padding-top: 60px;
+}
+
+
+.content-nav {
+    width: 100%;
+    background-color: #080808;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    z-index: 1;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.24); */
+}
+
+.content-nav ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 10px 20px;
+    color: #a5a5a5;
+    letter-spacing: 2px;
+    font-family: var(--fuente_2);
+    text-transform: uppercase;
+    /* el text transform agregado */
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: rgb(255, 255, 255);
+    transition: all 1.2s ease-in-out;
+}
+
+.sub-menu {
+    width: auto;
+    position: absolute;
+    background-color: #1b1a1a;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s ease-in-out;
+    text-transform: uppercase;
+    /* el text transform agregado */
+    z-index: 1;
+    /* nuevo agregado el z-index */
+}
+
+.sub-menu li a {
+    background-color: #262626;
+    display: block;
+    padding: 10px 20px;
+    font-family: var(--fuente_1);
+    text-decoration: none;
+    color: #a5a5a5;
+}
+
+.sub-menu li a:hover {
+    background-color: #333333;
+    transition: all 1.2s ease-in-out;
+}
+
+.menu li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* LINEA MENU */
+nav>ul>li>a::before {
+    content: '  ';
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: #aa8667;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+nav>ul>li>a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* COMIENZO DE LOS ESTILOS PARA EL FOOTER */
+
+footer {
+    font-family: var(--fuente_2);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #343434;
+    background-size: cover;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+#footer_principal_content {
+    margin-left: 170px;
+}
+
+.box__footer {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.box__footer .logo img {
+    padding-top: 25px;
+    width: 400px;
+    height: auto;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+/* ESTILOS DEL MAIN*/
+
+.maindiv {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: aliceblue;
+    background-color: darkolivegreen;
+}
+
+/* ESTILOS DEL BOTON */
+
+
+.btn {
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 10;
+    bottom: 10%;
+    right: 4.3%;
+}
+
+.btn-flotante {
+    text-decoration: none;
+}
+
+.btn-opciones>div {
+    z-index: 10;
+    transition: all 200ms linear;
+}
+
+.btn-check, .btn-abrir, .btn-opciones>div {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #5e5e5e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-abrir, .btn-opciones>div i {
+    color: #041119;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.btn-abrir {
+    transform: rotate(0deg);
+    transition: transform 450ms ease;
+    z-index: 20;
+    background-color: #5e5e5e;
+}
+
+.btn-check {
+    opacity: 0;
+    z-index: 30;
+}
+
+.btn-check:checked~.btn-abrir~.btn-opciones>div:first-child {
+    margin-top: -180px;
+}
+
+.btn-check:checked~.btn-abrir~.btn-opciones>div:nth-child(even) {
+    margin-top: -120px;
+}
+
+.btn-check:checked~.btn-abrir~.btn-opciones>div:last-child {
+    margin-top: -60px;
+}
+
+.btn-check:checked~.btn-abrir {
+    transform: rotate(180deg);
+}

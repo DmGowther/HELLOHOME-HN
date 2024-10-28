@@ -1,0 +1,31 @@
+{
+  "name": "hellohome-hn",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "server.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@headlessui/react": "^2.2.0",
+    "@sendgrid/mail": "^8.1.4",
+    "astro": "^4.16.7",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "leaflet": "^1.9.4",
+    "nodemailer": "^6.9.15",
+    "react-leaflet": "^4.2.1",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.14",
+    "@types/react-leaflet": "^2.8.3"
+  }
+}

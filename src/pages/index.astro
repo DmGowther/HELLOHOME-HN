@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style_main.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style_index.css" />
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"></script>
+
+    <title>Index</title>
+    <link rel="shortcut icon" href="/img/hotel.ico" />
+  </head>
+
+  <body>
+    <!-- INICIO DEL HEADER -->
+    <hgroup>
+      <header>
+        <!-- DIV PARA EL LOCO ENCABEZADO -->
+        <div class="header-img"></div>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="content-nav" id="navbar">
+          <ul class="menu">
+            <li><a href="/src/pages/index.astro">Inicio</a></li>
+            <li><a href="/src/pages/informacion.astro">Información</a></li>
+            <li><a href="/src/pages/galeria.astro">Galeria</a></li>
+            <li><a href="/src/pages/contactenos.astro">Contáctenos</a></li>
+          </ul>
+        </nav>
+      </header>
+    </hgroup>
+    <!-- FIN DEL HEADER -->
+
+    <!-- INICIO DEL MAIN -->
+    <main>
+      <!-- INICIO DEL SLIDER -->
+      <section class="body-slider">
+        <div class="contenedor_principal">
+          <input type="radio" name="image-slide" id="1" hidden />
+          <input type="radio" name="image-slide" id="2" hidden />
+          <input type="radio" name="image-slide" id="3" hidden />
+
+          <div class="slide">
+            <div class="item-slide">
+              <img src="/img/slider/slide_2.jpg" alt="img2" loading="lazy" />
+            </div>
+
+            <div class="item-slide">
+              <img src="/img/slider/slide_1.jpg" alt="img1" loading="lazy" />
+            </div>
+
+            <div class="item-slide">
+              <img src="/img/slider/slide_3.jpg" alt="img3" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- PAGINACION PARA DAR MOVIMIENTO MANUAL -->
+          <div class="pagina">
+            <label class="item-pagina" for="1">
+              <img src="/img/slider/slide_2.jpg" alt="img1" loading="lazy" />
+            </label>
+
+            <label class="item-pagina" for="2">
+              <img src="/img/slider/slide_1.jpg" alt="img2" loading="lazy" />
+            </label>
+
+            <label class="item-pagina" for="3">
+              <img src="/img/slider/slide_3.jpg" alt="img3" loading="lazy" />
+            </label>
+          </div>
+        </div>
+      </section>
+      <!-- FIN DEL SLIDER -->
+
+      <!-- COMIENZO DEL ABOUT US -->
+      <div class="container-about-prin">
+        <img src="/img/about-bg.jpg" style="width:100%;" />
+        <div class="container-about">
+          <div class="text-about">
+            <h1>Un poco sobre nosotros,</h1>
+            <p class="p_about1">en HelloHome Honduras</p>
+          </div>
+          <div class="text-about">
+            <p class="p_about2">
+              Nos especializamos en ofrecerte un proceso de compra seguro y sin
+              complicaciones. Sabemos que adquirir una casa es una de las
+              decisiones más importantes que tomarás, y estamos aquí para
+              apoyarte en cada paso del camino. Nos enorgullece proporcionar un
+              entorno que combina tranquilidad, comodidad y una inversión sólida
+              para tu futuro. Con HelloHome Honduras, puedes estar seguro de que
+              todas las transacciones se manejan con total transparencia y
+              seguridad. Nuestra prioridad es tu bienestar y tranquilidad, y
+              garantizamos que todas las legalidades estén en orden para que
+              solo te preocupes por disfrutar de tu nuevo hogar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FIN DEL ABOUT US -->
+
+    <!-- INICIO DEL SLIDER DE HABITACIONES -->
+    <section class="contenedor-img-slider">
+      <div class="center">
+        <h1>HELLOHOME HONDURAS</h1>
+        <h4>Propiedades disponibles</h4>
+        <div class="wrapper">
+          <div class="inner">
+            <div class="card">
+              <img src="/img/teg_lm/img (4).jpeg" />
+              <div class="content">
+                <h1>Habitacion normal</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="/img/teg_lm/img (4).jpeg" />
+              <div class="content">
+                <h1>Habitacion Superior</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/img/teg_lm/img (4).jpeg" />
+              <div class="content">
+                <h1>Junior Suite</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="/img/teg_lm/img (4).jpeg" />
+              <div class="content">
+                <h1>Habitacion Grand</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/img/teg_lm/img (4).jpeg" />
+              <div class="content">
+                <h1>Habitacion Deluxe</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/img/teg_lm/img (4).jpeg" />
+              <div class="content">
+                <h1>Habitacion Familiar</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/img/teg_lm/img (4).jpeg" />
+              <div class="content">
+                <h1>Habitacion Premium</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="/img/photodune-2681114-penthouse-room-on-a-sunny-day-m-700x400.jpg"
+              />
+              <div class="content">
+                <h1>Habitacion Suite</h1>
+                <h3>Ver detalles</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- FINAL DEL SLIDER DE HABITACIONES -->
+
+  <!-- COMIENZO DEL TESTIMONIAL -->
+  <section class="contenedor-testimonials">
+    <div class="testimonials">
+      <h2 class="testimonials-title">Que dicen nuestros clientes</h2>
+      <div class="container">
+        <div class="slides-t">
+          <div id="slide-1" class="slide-ctrl"></div>
+          <div id="slide-2" class="slide-ctrl"></div>
+          <div id="slide-3" class="slide-ctrl"></div>
+
+          <figure class="slide-t">
+            <blockquote class="testimonial">
+              <p>
+                “La tranquilidad que se siente en esta zona es inigualable.
+                Despertar cada mañana con la vista de las montañas y la
+                naturaleza alrededor ha sido una bendición para nuestra
+                familia.”
+              </p>
+              <cite>Maria García</cite>
+            </blockquote>
+          </figure>
+
+          <figure class="slide-t">
+            <blockquote class="testimonial">
+              <p>
+                “Lo que más me gusta es la sensación de seguridad que ofrece el
+                vecindario. Además, el acceso a servicios esenciales está a poca
+                distancia, lo que lo hace muy conveniente para nuestras
+                necesidades diarias.”
+              </p>
+              <cite>Carlos López</cite>
+            </blockquote>
+          </figure>
+
+          <figure class="slide-t">
+            <blockquote class="testimonial">
+              <p>
+                “El entorno natural es increíble. Tenemos acceso a áreas verdes,
+                y la vista desde el balcón es espectacular. Aquí se siente como
+                un verdadero refugio lejos del bullicio de la ciudad.”
+              </p>
+              <cite>Ana Rodríguez</cite>
+            </blockquote>
+          </figure>
+
+          <div class="slides-ctrl">
+            <a href="#slide-1" class="slide-btn">Maria García</a>
+            <a href="#slide-2" class="slide-btn">Carlos López</a>
+            <a href="#slide-3" class="slide-btn">Ana Rodríguez</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FIN DEL TESTIMONIAL -->
+
+  <footer>
+    <div class="container__footer">
+      <div class="box__footer" id="footer_principal_content">
+        <h2>Menu de navegación</h2>
+        <a href="/src/pages/index.astro">Pagina principal</a>
+        <a href="/src/pages/informacion.astro">Informacion</a>
+        <a href="/src/pages/galeria.astro">Galeria</a>
+        <a href="/src/pages/contactenos.astro">Contacto</a>
+      </div>
+
+      <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="#"> <i class="fa-brands fa-square-google-plus"></i> Google</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+      </div>
+
+      <div class="box__footer">
+        <h2></h2>
+        <div class="logo">
+          <img src="/img/logo.png" alt="logo_footer" />
+        </div>
+      </div>
+    </div>
+
+    <div class="box__copyright">
+      <hr />
+      <p>Todos los derechos reservados © 2024 <b>HelloHome Honduras</b></p>
+    </div>
+  </footer>
+  <script is:inline src="/public/js/fijar.js"></script>
+</html>
+<!-- FINAL DEL MAIN -->

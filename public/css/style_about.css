@@ -1,0 +1,247 @@
+:root {
+    --fuente_1: 'Merriweather', serif;
+    --fuente_2: 'Open Sans', sans-serif;
+    --fuente_3: 'Fira Sans Condensed', sans-serif;
+}
+
+main {
+    background-color: black;
+}
+
+/* BANNER INICIO */
+
+
+.contenedor-contacto {
+    border-bottom: rgba(24, 24, 24, 0.6) 3px solid;
+    border-top: rgba(24, 24, 24, 0.6) 3px solid;
+    width: 100%;
+    background: #b22036;
+}
+
+.contenedor-banner {
+    height: 150px;
+    background: black url("../img/banner-contacto.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contenedor-banner:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.contenedor-banner-teximg {
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-banner-teximg h1 {
+    font-family: var(--fuente_2);
+    font-size: 2.5rem;
+    font-weight: max(400, 700);
+    color: white;
+    position: absolute;
+    margin: 0;
+    padding: 0 1rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.contenedor-banner-teximg h3 {
+    color: white;
+    position: relative;
+}
+
+.contenedor-banner-teximg img {
+    margin-top: 5%;
+    opacity: 0.6;
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+
+/* BANNER FINAL */
+
+.row {
+    padding: 5px;
+    width: auto;
+    background-color: black;
+    margin: auto;
+}
+
+.colums {
+    display: flex;
+    justify-content: center;
+    margin: 0px 70px;
+}
+
+.column {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.column h4 {
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 30px;
+}
+
+.column p {
+    color: #a5a5a5;
+    text-align: center;
+}
+
+
+.container_story {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.text_story {
+    position: absolute;
+    bottom: 160px;
+    color: white;
+    width: auto;
+    height: 50%;
+    display: flex;
+}
+
+.column_story {
+    width: 50%;
+    justify-content: center;
+    margin: 0px 80px;
+}
+
+.tit_story {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: var(--fuente_2);
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+
+.p_story1 {
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.column_vision {
+    width: auto;
+}
+
+.p_story2 {
+    margin-bottom: 80px;
+    list-style: none;
+
+}
+
+/*barras de progreso*/
+.name {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: var(--fuente_1);
+}
+
+:root {
+    --bar-color: rgb(184, 159, 128);
+    --fill-size: 0%;
+}
+
+.progress-bar1 {
+    background-color: #fff;
+    position: relative;
+    width: 450px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progress-bar1::before {
+    content: "";
+    background-color: var(--bar-color);
+    transform: translatex(-100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: fill-bar 0.8ms 0.3s ease-in-out forwards;
+    border-radius: 10px;
+}
+
+@keyframes fill-bar {
+    to {
+        transform: translateX(var(--fill-size));
+    }
+}
+
+:root {
+    --bar-color: rgb(184, 159, 128);
+    --fill-size: 0%;
+}
+
+.progress-bar2 {
+    background-color: #fff;
+    position: relative;
+    width: 450px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progress-bar2::before {
+    content: "";
+    background-color: var(--bar-color);
+    transform: translatex(-100%);
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    animation: fill-bar 0.8ms 0.3s ease-in-out forwards;
+    border-radius: 10px;
+}
+
+@keyframes fill-bar {
+    to {
+        transform: translateX(var(--fill-size));
+    }
+}
+
+:root {
+    --bar-color: rgb(184, 159, 128);
+    --fill-size: 0%;
+}
+
+.progress-bar3 {
+    background-color: #fff;
+    position: relative;
+    width: 450px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progress-bar3::before {
+    content: "";
+    background-color: var(--bar-color);
+    transform: translatex(-100%);
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    animation: fill-bar 0.8ms 0.3s ease-in-out forwards;
+    border-radius: 10px;
+}
+
+@keyframes fill-bar {
+    to {
+        transform: translateX(var(--fill-size));
+    }
+}
